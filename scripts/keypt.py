@@ -107,8 +107,8 @@ class camera_1:
         if(self.velocity_x_deque[-1]!=self.velocity_x_deque[-2]):
           print('deque vel',self.velocity_x_deque[-1])
           print('timediff: ',time_diff)
-          cv2.imwrite(str(self.image_num) +'-' + str("{:.4f}".format(self.position_x[-1]))+'x'+'-' + str("{:.4f}".format(self.position_y[-1]))+'y'+'-' + str("{:.4f}".format(self.velocity_x_deque[-1]))+'vx' +'-' + str("{:.4f}".format(self.velocity_y_deque[-1]))+'vy'+'-' + str("{:.4f}".format(time_diff))+'t'+ 'R.jpg', self.buffered_frames[-1])
-          cv2.imwrite(str(self.image_num) +'-' + str("{:.4f}".format(self.position_x[-2]))+'x'+'-' + str("{:.4f}".format(self.position_y[-2]))+'y'+'-' + str("{:.4f}".format(self.velocity_x_deque[-2]))+'vx' +'-' + str("{:.4f}".format(self.velocity_y_deque[-2]))+'vy'+'-' + str("{:.4f}".format(time_diff))+'t'+ 'L.jpg', self.buffered_frames[-2])
+          # cv2.imwrite(str(self.image_num) +'-' + str("{:.4f}".format(self.position_x[-1]))+'x'+'-' + str("{:.4f}".format(self.position_y[-1]))+'y'+'-' + str("{:.4f}".format(self.velocity_x_deque[-1]))+'vx' +'-' + str("{:.4f}".format(self.velocity_y_deque[-1]))+'vy'+'-' + str("{:.4f}".format(time_diff))+'t'+ 'R.jpg', self.buffered_frames[-1])
+          # cv2.imwrite(str(self.image_num) +'-' + str("{:.4f}".format(self.position_x[-2]))+'x'+'-' + str("{:.4f}".format(self.position_y[-2]))+'y'+'-' + str("{:.4f}".format(self.velocity_x_deque[-2]))+'vx' +'-' + str("{:.4f}".format(self.velocity_y_deque[-2]))+'vy'+'-' + str("{:.4f}".format(time_diff))+'t'+ 'L.jpg', self.buffered_frames[-2])
            
     
     self.buffered_frames.append(gray)
